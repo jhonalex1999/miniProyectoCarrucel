@@ -21,6 +21,18 @@ Route::get('/', [App\Http\Controllers\FrontController::class, 'index'])->name('/
 
 Route::get('/organizacionVisualizacion', [App\Http\Controllers\FrontController::class, 'indexOrganizacion'])->name('organizacionVisualizacion');
 
+Route::get('/canastaVisualizacion', [App\Http\Controllers\FrontController::class, 'indexCanasta'])->name('canastaVisualizacion');
+
+Route::get('/ofertaVisualizacion', [App\Http\Controllers\FrontController::class, 'indexOferta'])->name('ofertaVisualizacion');
+
+
+
+
+
+
+
+
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
