@@ -11,7 +11,7 @@
   <div  class="carousel-inner">
 
 
-    @forelse($canasta as $item)
+    @forelse($organizacion as $item)
       <div class="carousel-item @if($loop->index==0)  active @endif">
          <img id="imgSlider" src="{{asset('storage').'/'.$item->imagen}}" class="d-block w-100" alt="...">
          <div id="slider">

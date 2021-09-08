@@ -18,7 +18,9 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 Route::get('/', [App\Http\Controllers\FrontController::class, 'index'])->name('/');
-Route::get('/canastaVisualizacion', [App\Http\Controllers\FrontController::class, 'indexCanasta'])->name('canastaVisualizacion');
+
+Route::get('/organizacionVisualizacion', [App\Http\Controllers\FrontController::class, 'indexOrganizacion'])->name('organizacionVisualizacion');
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -40,8 +42,6 @@ Route::post('/organizacion',[App\Http\Controllers\OrganizacionController::class,
 Route::get('/organizacion/{organizacion}',[App\Http\Controllers\OrganizacionController::class, 'edit'])->name('organizacion.edit');
 Route::put('/organizacion/{organizacion}',[App\Http\Controllers\OrganizacionController::class, 'update'])->name('organizacion.update');
 Route::delete('/organizacion/{organizacion}',[App\Http\Controllers\OrganizacionController::class, 'destroy'])->name('organizacion.delete');
-
-
 Route::get('/inversionista',[App\Http\Controllers\InversionistaController::class, 'index'])->name('index.index');
 Route::get('/inversionista/create',[App\Http\Controllers\InversionistaController::class,'create']);
 Route::post('/inversionista',[App\Http\Controllers\InversionistaController::class,'store']);

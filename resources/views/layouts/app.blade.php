@@ -32,8 +32,8 @@
                         <img id="icono" src="/imagenes/AgroCauca.png">
                         <h2 id="tituloIcono">AgroCauca</h2>
                         <a class="nav-link active" aria-current="page" href="/">Inicio</a>
-                        <a class="nav-link active"  href="canastaVisualizacion">Canasta</a>
-                        <a class="nav-link active" href="#">Emprendimientos</a>
+                        <a class="nav-link active"  href="#">Canasta</a>
+                        <a class="nav-link active" href="organizacionVisualizacion">Emprendimientos</a>
                         <a class="nav-link active" href="#">Agro Oferta</a>
                         <a class="nav-link active" href="#" >Inversionistas</a>
                         <a class="nav-link active" href="#" >Eventos</a>
