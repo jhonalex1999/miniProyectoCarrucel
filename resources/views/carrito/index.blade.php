@@ -2,13 +2,17 @@
 
 @section('contenido')
 <table class="w-full table-fixed table table-dark table-striped mt-4">
+    <p>
+        <a href="{{ route('carrito.vaciar')}}" class="btn btn-danger">Vaciar Carrito</a>
+    </p>
     <thead>
         <tr>
             <th scope="col">ID</th>
             <th scope="col">Nombre</th>
             <th scope="col">Imagen</th>
             <th scope="col">Cantidad</th>
-             <th scope="col">precio</th>
+            <th scope="col">precio</th>
+            <th scope="col">Acciones</th>
         </tr>
     </thead>
     <thbody>
@@ -17,11 +21,17 @@
             <td>{{$item->id}}</td>
             <td>{{$item->nombre}}</td>
             <td >
-                <img src="{{asset('storage').'/'.$item->imagen}}" alt="" width="100" height="100">
+            <img src="{{asset('storage').'/'.$item->imagen}}" alt="" width="100" height="100">
             </td>
             <td>{{$item->cantidad}}</td>
             <td>{{$item->precio}}</td>
-           
+            <td> 
+               <form action="{{ route('carrito.delete', $item->id) }}" method="POST" style="display: inline-block;" onsubmit="return confirm('Seguro?')">
+                    @csrf
+                    @method('DELETE')
+                        <button class="btn btn-danger" type="submit" rel="tooltip">Eliminar</button>
+                 </form> 
+            </td>
         </tr>
         @endforeach
     </thbody>

@@ -78,10 +78,7 @@ Route::delete('/oferta/{oferta}', [App\Http\Controllers\OfertaController::class,
 
 
 Route::get('/carrito',[App\Http\Controllers\CarritoController::class, 'index'])->name('carrito.index');
-
-
-
 Route::get('carrito/addCanasta/{item}',[App\Http\Controllers\CarritoController::class, 'addCanasta'])->name('carrito.agregar');
-
-
 Route::get('carrito/addOferta/{item}',[App\Http\Controllers\CarritoController::class, 'addOferta'])->name('carrito.agregarOferta');
+Route::delete('/carrito/delete/{item}', [App\Http\Controllers\CarritoController::class, 'delete'])->name('carrito.delete');
+Route::get('/carrito/vaciar', [App\Http\Controllers\CarritoController::class, 'vaciar'])->name('carrito.vaciar');

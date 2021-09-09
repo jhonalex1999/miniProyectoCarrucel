@@ -44,6 +44,20 @@ class CarritoController extends Controller
 
     }
 
+
+
+     public function delete( $id)
+    {
+       
+        $carrito= Carrito::find($id);
+        $carrito->delete();
+        return back()->with('succes', 'Usuario Eliminado Correctamente');
+    }
+
+
+
+
+
     /**
      * Display the specified resource.
      *
@@ -78,15 +92,13 @@ class CarritoController extends Controller
        
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-       
-
-    }
+    
+      public function vaciar() {
+        $carrito= Carrito::all();
+        foreach ($carrito as $item) {
+            $item->delete();
+        }
+        return back();
+                  
+     }
 }

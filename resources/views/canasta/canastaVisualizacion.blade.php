@@ -12,7 +12,7 @@
 						  <div class="card-body">
 						    <h5 class="card-title">{{$item->nombre}}</h5>
 						    <p class="card-text">{{$item->precio}}</p>
-						    <a href="{{ route('carrito.agregar', $item) }}" class="btn btn-primary">Agregar al carrito</a>
+						    <a href="{{ route('carrito.agregar', $item->id) }}" class="btn btn-primary">Agregar al carrito</a>
 						  </div>
 					</div>
 				@endforeach
