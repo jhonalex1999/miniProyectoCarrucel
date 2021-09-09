@@ -82,3 +82,6 @@ Route::get('/carrito',[App\Http\Controllers\CarritoController::class, 'index'])-
 
 
 Route::get('carrito/addCanasta/{item}',[App\Http\Controllers\CarritoController::class, 'addCanasta'])->name('carrito.agregar');
+
+
+Route::get('carrito/addOferta/{item}',[App\Http\Controllers\CarritoController::class, 'addOferta'])->name('carrito.agregarOferta');

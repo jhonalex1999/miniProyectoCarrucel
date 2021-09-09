@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Canasta;
 use App\Models\Carrito;
+use App\Models\Oferta;
 use Illuminate\Support\Facades\Storage;
 
 
@@ -25,6 +26,15 @@ class CarritoController extends Controller
    
     
     public function addCanasta(Canasta $item)
+    {
+       $array = array('nombre' =>$item->nombre , 'imagen'=>$item->imagen,'cantidad'=>$item->cantidad,'precio'=>$item->precio);
+        Carrito::create($array);
+        return redirect('/carrito');
+
+        
+
+    }
+      public function addOferta(Oferta $item)
     {
        $array = array('nombre' =>$item->nombre , 'imagen'=>$item->imagen,'cantidad'=>$item->cantidad,'precio'=>$item->precio);
         Carrito::create($array);
