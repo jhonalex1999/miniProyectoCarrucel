@@ -12,6 +12,10 @@
 						  <div class="card-body">
 						    <h5 class="card-title">{{$item->nombre}}</h5>
 						    <p class="card-text">{{$item->precio}}</p>
+						    <h5>Cantidad</h5>
+						    
+                                <input id="cantidad" type="cantidad" class="form-control" name="cantidad" >
+                            
 						    <a href="#" class="btn btn-primary">Agregar al carrito</a>
 						  </div>
 					</div>
@@ -21,4 +25,7 @@
 		
 	</div>
 </div>
+
+
+				
 @endsection

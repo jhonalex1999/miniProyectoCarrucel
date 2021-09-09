@@ -75,3 +75,10 @@ Route::post('/oferta',[App\Http\Controllers\OfertaController::class,'store']);
 Route::get('/oferta/{oferta}/edit', [App\Http\Controllers\OfertaController::class, 'edit'])->name('oferta.edit');
 Route::put('/oferta/{oferta}', [App\Http\Controllers\OfertaController::class, 'update'])->name('oferta.update');
 Route::delete('/oferta/{oferta}', [App\Http\Controllers\OfertaController::class, 'destroy'])->name('oferta.delete');
+
+
+Route::get('/carrito',[App\Http\Controllers\CarritoController::class, 'index'])->name('carrito.index');
+
+
+
+Route::get('carrito/addCanasta/{item}',[App\Http\Controllers\CarritoController::class, 'addCanasta'])->name('carrito.agregar');

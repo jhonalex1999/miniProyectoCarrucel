@@ -9,9 +9,12 @@
 			<figure class="figuraInv">
 				<img  class="frontal"  src="{{asset('storage').'/'.$item->imagen}}" alt="">
 				<figcaption class="trasera">
-					<h2 class="titulo">Titulo de prueba para la cara trasera de la imagen</h2>
+					<h2 class="titulo">{{$item->nombre}}</h2>
 					<hr>
-					<p>Parrafo para probar la cara trasera 	del contenedor</p>	
+					<p>{{$item->descripcion}}
+						<br>
+						{{$item->correo}}
+					</p>	
 				</figcaption>
 			</figure>
 		</a>
