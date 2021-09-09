@@ -24,7 +24,7 @@
         <nav id="navPrincipal" class="navbar navbar-expand-md ">
             <div class="container">
               
-
+                
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
@@ -35,7 +35,7 @@
                         <a class="nav-link active"  href="canastaVisualizacion">Canasta</a>
                         <a class="nav-link active" href="organizacionVisualizacion">Emprendimientos</a>
                         <a class="nav-link active" href="ofertaVisualizacion">Agro Oferta</a>
-                        <a class="nav-link active" href="#" >Inversionistas</a>
+                        <a class="nav-link active" href="inversionistaVisualizacion" >Inversionistas</a>
                         <a class="nav-link active" href="#" >Eventos</a>
                     </ul>
 

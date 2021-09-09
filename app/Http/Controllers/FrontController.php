@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Models\Organizacion;
 use App\Models\Canasta;
 use App\Models\Oferta;
+use App\Models\Inversionista;
+
 class FrontController extends Controller{
    public function index(){
             
@@ -22,5 +24,9 @@ class FrontController extends Controller{
      public function indexOferta(){
             $oferta=Oferta::all();
             return view('oferta/ofertaVisualizacion',compact('oferta'));
+    }
+    public function indexInversionista(){
+            $inversionista=Inversionista::all();
+            return view('inversionista/inversionistaVisualizacion',compact('inversionista'));
     }
 }
