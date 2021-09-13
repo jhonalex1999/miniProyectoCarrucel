@@ -57,14 +57,23 @@ class CarritoController extends Controller
 
 
     
-    public function updateCant(Carrito $item)
+    public function updateCant( Request $request,$id)
     {
-        $array = array('nombre' => $item->nombre,'imagen'=>$item->imagen,'cantidad'=>$item->cantidad,'precio'=>$item->precio );
-
-        Carrito::where('id','=',$item->id)->update($array);
        
 
+       $datosCarrito = request()->except(['_token','_method']);
 
+        if($request->hasFile('imagen')){
+            $canasta=Canasta::findOrFail($id);
+
+            Storage::delete('public/'.$canasta->imagen);
+
+            $datosCanasta['imagen']=$request->file('imagen')->store('uplodas','public');
+        }
+        Carrito::where('id','=',$id)->update($datosCarrito);
+        $carrito=Carrito::findOrFail($id);
+
+        
         return redirect('/carrito');
        
     }

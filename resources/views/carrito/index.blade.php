@@ -26,13 +26,15 @@
 
             <td>    
 
-            <form action="{{ route('carrito.updateCant', $item) }}" method="POST" enctype="multipart/form-data">
+
+            <form action="{{ route('carrito.updateCant', $item->id) }}" method="POST">
             @csrf
             @method('PUT')    
 
-                <input type="number" class="cantidadUpd" min="1" max="100" value="{{$item->cantidad}}" name="cantidadUpd">
+                <input type="number" class="cantidadUpd" min="1" max="100" value="{{$item->cantidad}}" name="cantidad">
                 <button type="submit" class="btn btn-primary" tabindex="4">Actualizar</button>
              </form>
+
 
             </td>
             
