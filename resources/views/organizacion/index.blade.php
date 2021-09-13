@@ -2,7 +2,9 @@
 
 @section('contenido')
 <h1>Mostrar Lista de Organizaciones</h1>
-<a href="organizacion/create" class= "btn btn-primary">Agregar Organizacion</a>
+<form action="{{ route('organizacion.create') }}" method="GET">
+	 <button type="submit" class="btn btn-primary" tabindex="4">Agregar Organizacion</button>
+</form>
 <table class="table table-dark table-striped mt-4">
 	<thead>
 		<tr>

@@ -2,7 +2,9 @@
 
 @section('contenido')
 <h1>Mostrar Lista de Eventos</h1>
-<a href="evento/create" class= "btn btn-primary">Agregar Evento</a>
+<form action="{{ route('evento.create') }}" method="GET">
+	 <button type="submit" class="btn btn-primary" tabindex="4">Agregar Evento</button>
+</form>
 <table class="table table-dark table-striped mt-4">
 	<thead>
 		<tr>

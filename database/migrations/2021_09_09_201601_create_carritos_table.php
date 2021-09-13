@@ -19,6 +19,7 @@ class CreateCarritosTable extends Migration
             $table->string('imagen',250);
             $table->integer('cantidad');
             $table->integer('precio');
+            $table->integer('precioT');
             $table->timestamps();
         });
     }

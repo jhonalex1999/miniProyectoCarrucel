@@ -11,7 +11,8 @@
             <th scope="col">Nombre</th>
             <th scope="col">Imagen</th>
             <th scope="col">Cantidad</th>
-            <th scope="col">precio</th>
+            <th scope="col">Precio Unitario</th>
+            <th scope="col">Precio Total</th>
             <th scope="col">Acciones</th>
         </tr>
     </thead>
@@ -39,6 +40,7 @@
             </td>
             
             <td>{{$item->precio}}</td>
+            <td>{{$item->precioT}}</td>
             <td> 
                <form action="{{ route('carrito.delete', $item->id) }}" method="POST" style="display: inline-block;" onsubmit="return confirm('Seguro?')">
                     @csrf
@@ -48,6 +50,7 @@
             </td>
         </tr>
         @endforeach
+        <h2>{{$total}}</h2>
     </thbody>
 </table>
 @endsection

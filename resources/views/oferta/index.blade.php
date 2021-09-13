@@ -1,7 +1,9 @@
 @extends('layouts.plantillabase')
 
 @section('contenido')
-<a href="oferta/create" class="btn btn-primary">CREAR</a>
+<form action="{{ route('oferta.create') }}" method="GET">
+     <button type="submit" class="btn btn-primary" tabindex="4">Agregar Oferta</button>
+</form>
 <table class="w-full table-fixed table table-dark table-striped mt-4">
     <thead>
         <tr>

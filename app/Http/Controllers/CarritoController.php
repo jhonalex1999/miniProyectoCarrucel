@@ -18,16 +18,17 @@ class CarritoController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
+    {   
+        $total=$this->total();
         $carrito= Carrito::all();
-        return view('carrito.index')->with('carrito',$carrito);
+        return view('carrito.index',compact('carrito','total'));
     }
 
    
     
     public function addCanasta(Canasta $item)
     {
-       $array = array('nombre' =>$item->nombre , 'imagen'=>$item->imagen,'cantidad'=>$item->cantidad,'precio'=>$item->precio);
+       $array = array('nombre' =>$item->nombre , 'imagen'=>$item->imagen,'cantidad'=>1,'precio'=>$item->precio,'precioT'=>$item->precio);
         Carrito::create($array);
         return redirect('/carrito');
 
@@ -36,7 +37,7 @@ class CarritoController extends Controller
     }
       public function addOferta(Oferta $item)
     {
-       $array = array('nombre' =>$item->nombre , 'imagen'=>$item->imagen,'cantidad'=>$item->cantidad,'precio'=>$item->precio);
+       $array = array('nombre' =>$item->nombre , 'imagen'=>$item->imagen,'cantidad'=>1,'precio'=>$item->precio,'precioT'=>$item->precio );
         Carrito::create($array);
         return redirect('/carrito');
 
@@ -59,21 +60,11 @@ class CarritoController extends Controller
     
     public function updateCant( Request $request,$id)
     {
-       
-
-       $datosCarrito = request()->except(['_token','_method']);
-
-        if($request->hasFile('imagen')){
-            $canasta=Canasta::findOrFail($id);
-
-            Storage::delete('public/'.$canasta->imagen);
-
-            $datosCanasta['imagen']=$request->file('imagen')->store('uplodas','public');
-        }
+        $carrito=Carrito::find($id);
+        $datosCarrito = request()->except(['_token','_method']);
+        $precio= $carrito->precio;
+        $datosCarrito['precioT']=$datosCarrito['cantidad']*$precio;
         Carrito::where('id','=',$id)->update($datosCarrito);
-        $carrito=Carrito::findOrFail($id);
-
-        
         return redirect('/carrito');
        
     }
@@ -87,4 +78,14 @@ class CarritoController extends Controller
         return back();
                   
      }
+
+     public function total(){
+        $total=0;
+        $carrito= Carrito::all();
+        foreach ($carrito as $item) {
+            $total=$total+$item->precioT;
+        }
+        return $total;
+     }
+
 }

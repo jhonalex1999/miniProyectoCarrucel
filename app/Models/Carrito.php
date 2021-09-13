@@ -14,5 +14,6 @@ class Carrito extends Model
         'imagen',
         'cantidad',
         'precio',
+        'precioT',
     ];
 }
