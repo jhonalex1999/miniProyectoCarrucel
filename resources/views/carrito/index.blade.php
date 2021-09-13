@@ -50,7 +50,8 @@
             </td>
         </tr>
         @endforeach
-        <h2>{{$total}}</h2>
+
     </thbody>
 </table>
+<h2>Total a pagar : {{$total}}</h2>
 @endsection
