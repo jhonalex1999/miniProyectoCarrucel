@@ -23,7 +23,19 @@
             <td >
             <img src="{{asset('storage').'/'.$item->imagen}}" alt="" width="100" height="100">
             </td>
-            <td>{{$item->cantidad}}</td>
+
+            <td>    
+
+            <form action="{{ route('carrito.updateCant', $item) }}" method="POST" enctype="multipart/form-data">
+            @csrf
+            @method('PUT')    
+
+                <input type="number" class="cantidadUpd" min="1" max="100" value="{{$item->cantidad}}" name="cantidadUpd">
+                <button type="submit" class="btn btn-primary" tabindex="4">Actualizar</button>
+             </form>
+
+            </td>
+            
             <td>{{$item->precio}}</td>
             <td> 
                <form action="{{ route('carrito.delete', $item->id) }}" method="POST" style="display: inline-block;" onsubmit="return confirm('Seguro?')">

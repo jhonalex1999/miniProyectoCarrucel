@@ -56,39 +56,16 @@ class CarritoController extends Controller
 
 
 
-
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
+    
+    public function updateCant(Carrito $item)
     {
-         
-    }
+        $array = array('nombre' => $item->nombre,'imagen'=>$item->imagen,'cantidad'=>$item->cantidad,'precio'=>$item->precio );
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Canasta $canasta)
-    {
-     
-    }
+        Carrito::where('id','=',$item->id)->update($array);
+       
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
+
+        return redirect('/carrito');
        
     }
 

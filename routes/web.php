@@ -82,3 +82,6 @@ Route::get('carrito/addCanasta/{item}',[App\Http\Controllers\CarritoController::
 Route::get('carrito/addOferta/{item}',[App\Http\Controllers\CarritoController::class, 'addOferta'])->name('carrito.agregarOferta');
 Route::delete('/carrito/delete/{item}', [App\Http\Controllers\CarritoController::class, 'delete'])->name('carrito.delete');
 Route::get('/carrito/vaciar', [App\Http\Controllers\CarritoController::class, 'vaciar'])->name('carrito.vaciar');
+Route::put('/carrito/{item}', [App\Http\Controllers\CarritoController::class, 'updateCant'])->name('carrito.updateCant');
+
+
