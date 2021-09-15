@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.plantillaBase2')
 
 @section('content')
 <div id="divSlider" class="container">

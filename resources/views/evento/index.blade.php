@@ -32,4 +32,5 @@
 		@endforeach
 	</thbody>
 </table>
+ <a href="/admin" class="btn btn-secondary" tabindex="5">Atras</a>
 @endsection

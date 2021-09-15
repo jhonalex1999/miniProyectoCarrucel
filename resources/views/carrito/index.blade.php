@@ -54,4 +54,5 @@
     </thbody>
 </table>
 <h2>Total a pagar : {{$total}}</h2>
+ <a href="/" class="btn btn-warning" tabindex="5">Seguir Comprando</a>
 @endsection

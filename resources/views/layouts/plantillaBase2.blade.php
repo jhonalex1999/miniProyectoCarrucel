@@ -18,7 +18,8 @@
 
     <!-- Styles -->
 
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="{{ asset('css/organizacion.css') }}" rel="stylesheet">
   
 </head>
 <body>
@@ -39,7 +40,7 @@
                         <a class="nav-link active" href="ofertaVisualizacion">Agro Oferta</a>
                         <a class="nav-link active" href="inversionistaVisualizacion" >Inversionistas</a>
                         <a class="nav-link active" href="#" >Eventos</a>
-                        <a class="nav-link active" href="carrito" >Carrito</a>        
+                        <a class="nav-link active" href="carrito" >Carrito</a>  
                                
                     </ul>
 
@@ -47,7 +48,7 @@
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
                         @guest
-                            @if (Route::has('login') )
+                            @if (Route::has('login'))
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                                 </li>
@@ -60,6 +61,7 @@
                                 </li>
                             @endif
                         @else
+                            
                             @if(Auth::user()->user =='admin')
                                   <a class="nav-link active" href="/admin" >Gestionar</a>   
                             @endif

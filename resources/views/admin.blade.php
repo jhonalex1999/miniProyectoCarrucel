@@ -2,6 +2,7 @@
 
 @section('content')
 <div class="container">
+    <div class="col-md-2"></div>
     <div class="row justify-content-center">
         
             <div style="margin: 10px;">
