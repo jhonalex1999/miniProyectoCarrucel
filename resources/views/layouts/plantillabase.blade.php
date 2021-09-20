@@ -7,13 +7,17 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="{{ asset('css/base.css') }}" rel="stylesheet">
     <title>CRUD con Laravel 8 y Bootstrap 5</title>
   </head>
-  <body>
+  <body >
+       <nav id="navPrincipal" class="navbar navbar-expand-md " >
+          <img id="icono" src="/imagenes/AgroCauca.png">
+          <h2 id="tituloIcono">AgroCauca</h2>
+       </nav>
+    <br>   
     <div class="container">
-    <h1 class="bg-primary text-white text-center mb-3">CRUD con Laravel 8 y Bootstrap 5</h1>
-
-
+    
     <div class="container">
         @yield('contenido')
     </div>
@@ -28,4 +32,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-t6I8D5dJmMXjCsRLhSzCltuhNZg6P10kE0m0nAncLUjH6GeYLhRU1zfLoW3QNQDF" crossorigin="anonymous"></script>
     -->
   </body>
+  <br>
+  <footer></footer>
 </html>

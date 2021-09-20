@@ -3,7 +3,7 @@
 <div class="container">
       <div class="container"></div>
             
-                   <iframe  id="video" width="560" height="315"  src="https://www.youtube.com/embed/cze8T9p4fMk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                   <iframe  id="video" width="50%" height="315"  src="https://www.youtube.com/embed/cze8T9p4fMk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
            
                   <h2>QUIENES SOMOS?</h2>
 

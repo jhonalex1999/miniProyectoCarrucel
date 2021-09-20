@@ -73,6 +73,7 @@ body {
 }
 #navPrincipal{
   background: black;
+  width: 100%;
 }
 hr {
   box-sizing: content-box;
@@ -4137,7 +4138,7 @@ input[type=button].btn-block {
     display: none;
   }
 }
-@media (max-width: 991.98px) {
+@media (max-width: 999.98px) {
   .navbar-expand-lg > .container,
 .navbar-expand-lg > .container-fluid,
 .navbar-expand-lg > .container-sm,
@@ -4148,7 +4149,7 @@ input[type=button].btn-block {
     padding-left: 0;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1000px) {
   .navbar-expand-lg {
     flex-flow: row nowrap;
     justify-content: flex-start;
@@ -4527,6 +4528,7 @@ input[type=button].btn-block {
 
 .card-columns .card {
   margin-bottom: 0.75rem;
+  
 }
 @media (min-width: 576px) {
   .card-columns {
@@ -10141,9 +10143,8 @@ figure .trasera p{
 .containerInv_tarjeta:hover figure img{
   filter:blur(2px);
 }
-footer{
 
-  background: black; 
-  height: 70px;
-  width: 1350px;
+#footerP{
+  background: black;
+  width: 100%;
 }

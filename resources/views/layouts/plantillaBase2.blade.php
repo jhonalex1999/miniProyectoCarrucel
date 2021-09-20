@@ -24,31 +24,40 @@
 </head>
 <body>
     <div id="app">
-        <nav id="navPrincipal" class="navbar navbar-expand-md ">
-            <div class="container">
-              
-                
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
-
-                        <img id="icono" src="/imagenes/AgroCauca.png">
-                        <h2 id="tituloIcono">AgroCauca</h2>
-                        <a class="nav-link active" aria-current="page" href="/">Inicio</a>
-                        <a class="nav-link active"  href="canastaVisualizacion">Canasta</a>
-                        <a class="nav-link active" href="organizacionVisualizacion">Emprendimientos</a>
-                        <a class="nav-link active" href="ofertaVisualizacion">Agro Oferta</a>
-                        <a class="nav-link active" href="inversionistaVisualizacion" >Inversionistas</a>
-                        <a class="nav-link active" href="#" >Eventos</a>
-                        <a class="nav-link active" href="carrito" >Carrito</a>  
-                               
-                    </ul>
-
-                    <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ml-auto">
+        <nav class="navbar navbar-expand-lg  navbar-dark" id="navPrincipal">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <img id="icono" src="/imagenes/AgroCauca.png">
+              <h2 id="tituloIcono">AgroCauca</h2>
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active"  href="canastaVisualizacion">Canasta</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link active" href="organizacionVisualizacion">Emprendimientos</a>
+              </li>    
+              <li class="nav-item">
+                  <a class="nav-link active" href="ofertaVisualizacion">Agro Oferta</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link active" href="inversionistaVisualizacion" >Inversionistas</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link active" href="#" >Eventos</a>
+              </li>
+               <li class="nav-item">
+                  <a class="nav-link active" href="carrito" >Carrito</a>       
+              </li>      
+            </ul>
+            <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
                         @guest
-                            @if (Route::has('login'))
+                            @if (Route::has('login') )
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                                 </li>
@@ -61,7 +70,6 @@
                                 </li>
                             @endif
                         @else
-                            
                             @if(Auth::user()->user =='admin')
                                   <a class="nav-link active" href="/admin" >Gestionar</a>   
                             @endif
@@ -88,16 +96,21 @@
                         
                         @endguest
                     </ul>
-                </div>
-            </div>
+          </div>  
         </nav>
- </div>
+     
+    
+
+     </div>
     
         <main class="py-4">
             @yield('content')
         </main>
-<br>  <br>  <br>   <br>  <br>  <br> <br>  <br>  <br>   <br>  <br>  <br>   <br>   
-<footer></footer>
+ 
+<div class="jumbotron text-center" style="margin-bottom:0" id="footerP">
+  <p>Footer</p>
+   
+</div>
 </body>
 
 </html>
