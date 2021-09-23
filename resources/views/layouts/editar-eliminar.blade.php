@@ -33,5 +33,5 @@
     -->
   </body>
   <br>
-  <footer></footer>
+  
 </html>

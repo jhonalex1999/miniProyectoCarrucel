@@ -112,5 +112,86 @@
 
 
 </body>
-<footer>hola</footer>
+<footer>
+            
+      <div class="main-content">
+        <div class="left box">
+          <h2>Ubicacion</h2>
+          <div class="content">
+             <div class="place">
+              <span class="fas fa-map-marker-alt"></span>
+              <span class="text">cra 36 # 15-6</span>
+            </div>
+            <div class="place">
+              <span class="fas fa-map-marker-alt"></span>
+              <span class="text">Popayan, Colombia</span>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="center box">
+          <h2>Contactos</h2>
+          <div class="content">
+           
+            <div class="phone">
+              <span class="fas fa-phone-alt"></span>
+              <span class="text">+57 311-387-2448</span>
+            </div>
+            <div class="email">
+              <span class="fas fa-envelope"></span>
+              <span class="text">jhonalexsa@unicaua.edu.co</span>
+            </div>
+            <div class="email">
+              <span class="fas fa-envelope"></span>
+              <span class="text">pintocristian@unicauca.edu.co</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="right box">
+          <h2>Siguenos</h2>
+          <div class="content">
+            
+             <div id="divIconos">
+               
+                 <a href=" https://www.facebook.com/16camilo" target="_blank">
+                       <img  src="/imagenes/facebook.png" id="iconos">
+                 </a>
+                 
+
+
+             </div>
+             <div id="divIconos">
+                <a href="https://www.instagram.com/16camilocp"  target="_blank">
+                    <img src="/imagenes/instagram.png" id="iconos">
+                </a>
+                
+             </div>
+             <div id="divIconos">
+                <a href="https://www.youtube.com/channel/UCK0aBPupMSeyUZcW3TAXWoQ"  target="_blank">
+                      <img src="/imagenes/youtube.png" id="iconos">
+                </a>
+              
+             </div>
+       
+       
+ 
+              
+            
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <center>
+          <span class="credit">Cauca AgroSostenible 
+             | </span>
+          <span class="far fa-copyright"></span><span> 2021.</span>
+        </center>
+      </div>
+
+
+
+
+</footer>
 </html>
