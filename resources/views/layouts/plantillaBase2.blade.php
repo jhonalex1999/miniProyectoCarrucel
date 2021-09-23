@@ -22,7 +22,7 @@
     <link href="{{ asset('css/organizacion.css') }}" rel="stylesheet">
   
 </head>
-<body>
+<body >
     <div id="app">
         <nav class="navbar navbar-expand-lg  navbar-dark" id="navPrincipal">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -31,7 +31,8 @@
           <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
               <img id="icono" src="/imagenes/AgroCauca.png">
-              <h2 id="tituloIcono">AgroCauca</h2>
+              <h2 id="tituloIcono">Cauca AgroSostenible</h2>
+
               <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="/">Inicio</a>
               </li>
@@ -103,14 +104,11 @@
 
      </div>
     
-        <main class="py-4">
-            @yield('content')
+        <main class="py-4" id="contenido">
+            @yield('content' )
         </main>
  
-<div class="jumbotron text-center" style="margin-bottom:0" id="footerP">
-  <p>Footer</p>
-   
-</div>
-</body>
 
+</body>
+<footer>hola</footer>
 </html>

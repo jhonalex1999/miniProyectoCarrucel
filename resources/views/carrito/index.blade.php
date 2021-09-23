@@ -1,7 +1,7 @@
 @extends('layouts.plantillabase')
 
 @section('contenido')
-<table class="w-full table-fixed table table-dark table-striped mt-4">
+<table class=" table table-responsive  table-dark table-striped mt-4" >
     <p>
         <a href="{{ route('carrito.vaciar')}}" class="btn btn-danger">Vaciar Carrito</a>
     </p>
@@ -32,7 +32,7 @@
             @csrf
             @method('PUT')    
 
-                <input type="number" class="cantidadUpd" min="1" max="100" value="{{$item->cantidad}}" name="cantidad">
+                <input type="number" class="cantidadUpd" min="1" max="{{$item->cantidad}}" value="1" name="cantidad">
                 <button type="submit" class="btn btn-primary" tabindex="4">Actualizar</button>
              </form>
 
@@ -55,4 +55,7 @@
 </table>
 <h2>Total a pagar : {{$total}}</h2>
  <a href="/" class="btn btn-warning" tabindex="5">Seguir Comprando</a>
+
+ 
+ 
 @endsection

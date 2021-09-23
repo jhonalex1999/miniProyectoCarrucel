@@ -35,7 +35,7 @@
           <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
               <img id="icono" src="/imagenes/AgroCauca.png">
-              <h2 id="tituloIcono">AgroCauca</h2>
+              <h2 id="tituloIcono">Cauca AgroSostenible</h2>
               <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="/">Inicio</a>
               </li>
@@ -106,13 +106,11 @@
         
  </div>
     
-        <main class="py-4">
+        <main class="py-4" id="contenido">
             @yield('content')
         </main>
-<br>  <br>  <br>   <br>  <br>  <br> <br>  <br>  <br>   <br>  <br>  <br>   <br>   
-<div class="jumbotron text-center" style="margin-bottom:0" id="footerP">
-  <p>Footer</p>
-</div>
-</body>
 
+
+</body>
+<footer>hola</footer>
 </html>

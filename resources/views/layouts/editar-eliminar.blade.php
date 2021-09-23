@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="{{ asset('css/base.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/editar-eliminar.css') }}" rel="stylesheet">
     <title>CRUD con Laravel 8 y Bootstrap 5</title>
   </head>
   <body >

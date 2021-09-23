@@ -1,4 +1,4 @@
-@extends('layouts.plantillabase')
+@extends('layouts.editar-eliminar')
 
 @section('contenido')
 <h2>CREAR EVENTO</h2>

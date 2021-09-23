@@ -1,4 +1,4 @@
-@extends('layouts.plantillabase')
+@extends('layouts.editar-eliminar')
 
 @section('contenido')
 <h2>EDITAR OFERTA</h2>
@@ -24,12 +24,12 @@
     <input id="cantidad" name="cantidad" type="number" class="form-control" tabindex="3" value="{{$oferta->cantidad}}">
   </div>
   <div class="mb-3">
-    <label for="" class="form-label">Descuentp</label>
-    <input id="descuento" name="descuento" type="number" step="any" class="form-control" tabindex="3" value="{{$oferta->descuento}}">
+    <label for="" class="form-label">Descuento</label>
+    <input id="descuento" name="descuento" type="number"  class="form-control" tabindex="3" value="{{$oferta->descuento}}">
   </div>
   <div class="mb-3">
     <label for="" class="form-label">Precio</label>
-    <input id="precio" name="precio" type="number" step="any" value="0.00" class="form-control" tabindex="3" value="{{$oferta->precio}}">
+    <input id="precio" name="precio" type="number"  class="form-control" tabindex="3" value="{{$oferta->precio}}">
   </div>
   <a href="/oferta" class="btn btn-secondary" tabindex="5">Cancelar</a>
   <button type="submit" class="btn btn-primary" tabindex="4">Guardar</button>

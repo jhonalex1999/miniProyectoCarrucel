@@ -5,7 +5,7 @@
 <form action="{{ route('organizacion.create') }}" method="GET">
 	 <button type="submit" class="btn btn-primary" tabindex="4">Agregar Organizacion</button>
 </form>
-<table class="table table-dark table-striped mt-4">
+<table class="table table-responsive table-dark table-striped mt-4" >
 	<thead>
 		<tr>
 			<th scope="col">ID</th>

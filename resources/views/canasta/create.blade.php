@@ -1,4 +1,4 @@
-@extends('layouts.plantillabase')
+@extends('layouts.editar-eliminar')
 
 @section('contenido')
 <h2>CREAR CANASTA</h2>
@@ -16,7 +16,7 @@
   </div>
   
   <div class="grid grid-cols-1 mt-5 mx-7">
-    <label class="uppercase md:text-sm text-xs text-gray-500 text-light font-semibold mb-1">Subir Imagen</label>
+    <label class="uppercase md:text-sm text-xs text-gray-500 text-light font-semibold mb-1"></label>
     <div class='flex items-center justify-center w-full'>
       
         <input name="imagen" id="imagen" type='file' class="hidden" />

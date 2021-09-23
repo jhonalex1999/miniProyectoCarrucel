@@ -1,17 +1,22 @@
 body{
-background: url(/imagenes/FondoTablas.jpg);
+background: url(/imagenes/EditarCrear.jpg);
+
 }
 footer{
 
    background: black;
     height: 70px;
     border-top: 2px solid rgba(0, 0, 0, 0.24);  
+    
 }
 a{
-  color: white;
+  color: black;
 }
 h2{
-  color: white;
+  color: black;
+}
+label{
+    color: black;
 }
 #icono{
    width: 50px ;

@@ -10144,11 +10144,15 @@ figure .trasera p{
 .containerInv_tarjeta:hover figure img{
   filter:blur(2px);
 }
-#footerP{
-  background: black;
-  width: 100%;
-}
+footer{
 
+   background: black;
+    height: 70px;
+    border-top: 2px solid rgba(0, 0, 0, 0.24);  
+}
+#contenido{
+    min-height:800px;
+  }
 
 
 

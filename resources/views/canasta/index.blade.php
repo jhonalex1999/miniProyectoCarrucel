@@ -4,7 +4,9 @@
 <form action="{{ route('canasta.create') }}" method="GET">
      <button type="submit" class="btn btn-primary" tabindex="4">Agregar Canasta</button>
 </form>
-<table class="w-full table-fixed table table-dark table-striped mt-4">
+
+
+    <table class="  table table-responsive  table-dark table-striped mt-4"  >
     <thead>
         <tr>
             <th scope="col">ID</th>
@@ -13,6 +15,7 @@
             <th scope="col">Cantidad</th>
             <th scope="col">Precio</th>
             <th scope="col">Acciones</th>
+            
         </tr>
     </thead>
     <thbody>
@@ -33,9 +36,11 @@
                         <button class="btn btn-danger" type="submit" rel="tooltip">Eliminar</button>
                  </form> 
             </td>
+       
         </tr>
         @endforeach
     </thbody>
 </table>
+
  <a href="/admin" class="btn btn-secondary" tabindex="5">Atras</a>
 @endsection

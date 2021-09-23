@@ -2,7 +2,7 @@
 
 @section('content')
 <h1>Mostrar Lista de Inversionistas</h1>
-<div class="containerInv">
+<div class="containerInv" >
 	@foreach($inversionista as $item)
 	<div class="containerInv_tarjeta">
 	<a href="#">
