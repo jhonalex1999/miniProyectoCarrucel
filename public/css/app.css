@@ -4348,12 +4348,13 @@ input[type=button].btn-block {
 }
 
 .card {
+  
   position: relative;
   display: flex;
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
+   background:white;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
@@ -4385,6 +4386,8 @@ input[type=button].btn-block {
   flex: 1 1 auto;
   min-height: 1px;
   padding: 1.25rem;
+
+  background: url(/imagenes/FondoTarjetas.jpg);
 }
 
 .card-title {
@@ -10278,4 +10281,11 @@ footer{
 }
 #iconos{
   width: 60px;
+}
+#carrito{
+  width: 25px;
+}
+.btn-carrito{
+  background: url(/imagenes/btnCarrito.jpg);
+  color: white;
 }

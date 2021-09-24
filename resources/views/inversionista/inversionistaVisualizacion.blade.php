@@ -13,7 +13,12 @@
 					<hr>
 					<p>{{$item->descripcion}}
 						<br>
+						Contacto
+						<br>
 						{{$item->correo}}
+						<br>
+						
+
 					</p>	
 				</figcaption>
 			</figure>

@@ -1,7 +1,10 @@
 @extends('layouts.plantillabase')
 
 @section('contenido')
-<table class=" table table-responsive  table-dark table-striped mt-4" >
+<div class="row">
+    <div class="col">
+        <div class="table-responsive">
+                <table class=" table   table-dark table-striped mt-4" >
     <p>
         <a href="{{ route('carrito.vaciar')}}" class="btn btn-danger">Vaciar Carrito</a>
     </p>
@@ -33,7 +36,7 @@
             @method('PUT')    
 
                 <input type="number" class="cantidadUpd" min="1" max="{{$item->cantidad}}" value="1" name="cantidad">
-                <button type="submit" class="btn btn-primary" tabindex="4">Actualizar</button>
+                <button type="submit" class="btn btn-update" tabindex="4"><img id="actualizar" src="/imagenes/actualizar.png"></button>
              </form>
 
 
@@ -45,14 +48,21 @@
                <form action="{{ route('carrito.delete', $item->id) }}" method="POST" style="display: inline-block;" onsubmit="return confirm('Seguro?')">
                     @csrf
                     @method('DELETE')
-                        <button class="btn btn-danger" type="submit" rel="tooltip">Eliminar</button>
+                        <button class="btn btn-eliminar" type="submit" rel="tooltip">
+                            <img id="eliminar" src="/imagenes/eliminar.png">
+
+                        </button>
                  </form> 
             </td>
         </tr>
         @endforeach
 
     </thbody>
-</table>
+</table>        
+        </div>
+    </div>
+</div>
+
 <h2>Total a pagar : {{$total}}</h2>
  <a href="/" class="btn btn-warning" tabindex="5">Seguir Comprando</a>
 

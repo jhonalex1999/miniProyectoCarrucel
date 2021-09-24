@@ -14,11 +14,14 @@
     @forelse($organizacion as $item)
       <div class="carousel-item @if($loop->index==0)  active @endif">
          <img id="imgSlider" src="{{asset('storage').'/'.$item->imagen}}" class="d-block w-100" alt="...">
-         <div id="slider">
+         
               <h2>{{$item->nombre}}</h2>
-              <p>It’s never been easier to watch YouTube on the big screen
-              Send your favorite YouTube videos from your Android phone or tablet to TV with the touch of a button. It’s easy. No wires, no setup, no nothing. Find out more here.</p>
-          </div>
+              <p>
+                <h4>{{$item->ubicacion}}</h2>
+                <br>
+                <h4>{{$item->telefono}}</h2>
+              </p>
+          
      </div>
     @empty
     @endforelse

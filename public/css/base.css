@@ -20,9 +20,19 @@ h2{
 #contenido{
     min-height:700px;
   }
+.btn-update{
+  background: transparent;
+}
+#actualizar{
+  width: 30px;
+}
 
-
-
+#eliminar{
+  width: 50px;
+}
+#editar{
+  width: 50px;
+}
 footer{
   color: white;
   bottom: 0px;

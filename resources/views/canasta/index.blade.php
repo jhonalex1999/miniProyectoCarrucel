@@ -4,9 +4,10 @@
 <form action="{{ route('canasta.create') }}" method="GET">
      <button type="submit" class="btn btn-primary" tabindex="4">Agregar Canasta</button>
 </form>
-
-
-    <table class="  table table-responsive  table-dark table-striped mt-4"  >
+    <div class="row">
+    <div class="col">
+        <div class="table-responsive">
+                 <table class="  table   table-dark table-striped mt-4"  >
     <thead>
         <tr>
             <th scope="col">ID</th>
@@ -29,18 +30,27 @@
             <td>{{$canasta->cantidad}}</td>
             <td>{{$canasta->precio}}</td>
             <td> 
-                <a href="{{ route('canasta.edit', $canasta->id) }}" class="btn btn-warning">editar</i></a>
+                <a href="{{ route('canasta.edit', $canasta->id) }}" class="btn btn-editar">
+                    <img id="editar" src="/imagenes/editar.png">
+                </i></a>
                <form action="{{ route('canasta.delete', $canasta->id) }}" method="POST" style="display: inline-block;" onsubmit="return confirm('Seguro?')">
                     @csrf
                     @method('DELETE')
-                        <button class="btn btn-danger" type="submit" rel="tooltip">Eliminar</button>
+                        <button class="btn btn-eliminar" type="submit" rel="tooltip">
+                            <img id="eliminar" src="/imagenes/eliminar.png">
+                        </button>
                  </form> 
             </td>
        
         </tr>
         @endforeach
     </thbody>
-</table>
+</table>         
+        </div>
+    </div>
+</div>
+
+   
 
  <a href="/admin" class="btn btn-secondary" tabindex="5">Atras</a>
 @endsection

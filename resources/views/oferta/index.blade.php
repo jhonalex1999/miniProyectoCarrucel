@@ -4,7 +4,11 @@
 <form action="{{ route('oferta.create') }}" method="GET">
      <button type="submit" class="btn btn-primary" tabindex="4">Agregar Oferta</button>
 </form>
-<table class=" table table-responsive  table-dark table-striped mt-4" >
+<div class="row">
+    <div class="col">
+        <div class="table-responsive">
+                
+<table class=" table   table-dark table-striped mt-4" >
     <thead>
         <tr>
             <th scope="col">ID</th>
@@ -28,16 +32,25 @@
             <td>{{$oferta->descuento}}</td>
             <td>{{$oferta->precio}}</td>
             <td> 
-                <a href="{{ route('oferta.edit', $oferta->id) }}" class="btn btn-warning">editar</i></a>
+                <a href="{{ route('oferta.edit', $oferta->id) }}" class="btn btn-editar">
+                      <img id="editar" src="/imagenes/editar.png">
+                </i></a>
                <form action="{{ route('oferta.delete', $oferta->id) }}" method="POST" style="display: inline-block;" onsubmit="return confirm('Seguro?')">
                     @csrf
                     @method('DELETE')
-                        <button class="btn btn-danger" type="submit" rel="tooltip">Eliminar</button>
+                        <button class="btn btn-eliminar" type="submit" rel="tooltip">
+                            
+                            <img id="eliminar" src="/imagenes/eliminar.png">
+                        </button>
                  </form> 
             </td>
         </tr>
         @endforeach
     </thbody>
-</table>
+</table>            
+        </div>
+    </div>
+</div>
+
  <a href="/admin" class="btn btn-secondary" tabindex="5">Atras</a>
 @endsection
