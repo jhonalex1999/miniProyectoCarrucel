@@ -27,6 +27,7 @@ Route::get('/ofertaVisualizacion', [App\Http\Controllers\FrontController::class,
 
 Route::get('/inversionistaVisualizacion', [App\Http\Controllers\FrontController::class, 'indexInversionista'])->name('ofertaVisualizacion');
 
+Route::get('/eventoVisualizacion', [App\Http\Controllers\FrontController::class, 'indexEvento'])->name('eventoVisualizacion');
 
 
 

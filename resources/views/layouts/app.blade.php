@@ -52,7 +52,7 @@
                   <a class="nav-link active" href="inversionistaVisualizacion" >Inversionistas</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link active" href="#" >Eventos</a>
+                  <a class="nav-link active" href="eventoVisualizacion" >Eventos</a>
               </li>
                <li class="nav-item">
                   <a class="nav-link active" href="carrito" >Carrito</a>       
