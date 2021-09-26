@@ -60,16 +60,6 @@ addMarker(Evento2)
 addMarker(Evento3)
 addMarker(Evento4)
 addMarker(Evento5)
-        /*addMarker({
-          coords:{lat:2.433, lng: -76.617 },
-          content:'<h1>Evento 1</h1>'});
-        addMarker({
-          coords:{lat:2.440385807863125, lng:-76.6028274050303 },
-          content:'<h1>Evento 2</h1>'});
-        addMarker({
-          coords:{lat:2.442446199992913, lng:-76.60930062269068},
-          content:'<h1>Evento 3</h1>'});*/
-        //Crear una funcion para añadir marcadores
         function addMarker(evento){
           var marker = new google.maps.Marker({
             position: evento.coords,
@@ -179,6 +169,7 @@ addMarker(Evento5)
     </ul>
   </div>  
 </nav>
+
 
 <div id="map">
   <script async

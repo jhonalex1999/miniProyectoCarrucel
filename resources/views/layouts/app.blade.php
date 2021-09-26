@@ -11,7 +11,8 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
-
+    
+    <script src="{{ asset('js/modernizr-2.6.2.min.js') }}" defer></script>
 
 
     <!-- Fonts -->
@@ -19,13 +20,21 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
+    
+
+
+ 
+
 
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+   
   
 </head>
-<body>
+<body id="principal">
     <div id="app">
 
+
+        
 
 
         <nav class="navbar navbar-expand-lg  navbar-dark" id="navPrincipal" >
@@ -109,6 +118,27 @@
         <main class="py-4" id="contenido">
             @yield('content')
         </main>
+
+
+    <script src="{{ asset('js/jquery.min.js') }}" defer></script>
+    <script src="{{ asset('js/jquery.easing.1.3.js') }}" defer></script>  
+    <script src="{{ asset('js/bootstrap.min.js') }}" defer></script>   
+    <script src="{{ asset('js/jquery.waypoints.min.js') }}" defer></script>
+    <script src="{{ asset('js/jquery.stellar.min.js') }}" defer></script>
+    <script src="{{ asset('js/owl.carousel.min.js') }}" defer></script>
+    <script src="{{ asset('js/jquery.flexslider-min.js') }}" defer></script>
+
+    <script src="{{ asset('js/jquery.countTo.js') }}" defer></script>
+    <script src="{{ asset('js/jquery.magnific-popup.min.js') }}" defer></script>
+    <script src="{{ asset('js/magnific-popup-options.js') }}" defer></script>
+    <script src="{{ asset('js/simplyCountdown.js') }}" defer></script>
+    <script src="{{ asset('js/main.js') }}" defer></script>
+
+
+
+
+
+
 
 
 </body>
