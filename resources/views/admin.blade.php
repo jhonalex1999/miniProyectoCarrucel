@@ -45,16 +45,7 @@
                     </div>
                 </div>
         </div>
-           <div style="margin: 10px;">
-                  <div class="card" style="width: 18rem;">
-                    <img src="/imagenes/eventos.jpg" class="card-img-top" alt="..."  width="250" height="250">
-                    <div class="card-body">
-                     <h5 class="card-title">CRUD Eventos</h5>
-                     <p class="card-text">Ingresa para Crear, Editar y Eliminar los Eventos</p>
-                     <a href="/evento" class="btn btn-primary">Gestionar</a>
-                    </div>
-                </div>
-        </div>
+          
     </div>
 </div>
 @endsection

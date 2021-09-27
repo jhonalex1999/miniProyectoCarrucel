@@ -65,7 +65,7 @@ body {
   line-height: 1.6;
   color: #212529;
   text-align: left;
-  background:url(/imagenes/FondoPrincipal.jpg);
+  background:url(/imagenes/FondoPrueba.jpg);
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -10018,13 +10018,10 @@ h3 {
 
 #imgSlider{
 
-  height: 200px;
+  height: 600px;
+  width: 100%;
 }
-#divSlider{
-  height: 100%;
-  width: 50%;
- 
-  }
+
 
 #slider{
   background: url(/imagenes/fondoCarrucel.jpg);

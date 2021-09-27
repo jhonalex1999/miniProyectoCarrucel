@@ -1,7 +1,7 @@
 @extends('layouts/plantillabase');
 
 @section('contenido')
-<h1>Mostrar Lista de Organizaciones</h1>
+
 <form action="{{ route('organizacion.create') }}" method="GET">
 	 <button type="submit" class="btn btn-primary" tabindex="4">Agregar Organizacion</button>
 </form>

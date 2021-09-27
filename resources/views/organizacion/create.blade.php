@@ -1,13 +1,18 @@
 @extends('layouts.editar-eliminar')
 
 @section('contenido')
-<h2>CREAR ORGANIZACION</h2>
+<br><br><br>
+<center>
+    
+    <div class="card" id="card">
+        <h2>CREAR ORGANIZACION</h2>
 
+<br><br>
 <form action="/organizacion" method="POST" enctype="multipart/form-data">
     @csrf
   <div class="mb-3">
-    <label for="" class="form-label">Nombre</label>
-    <input id="nombre" name="nombre" type="text" class="form-control" tabindex="1">    
+    
+    <input placeholder="Nombre"  id="nombre" name="nombre" type="text" class="input form-control" tabindex="1">    
   
   <!-- Para ver la imagen seleccionada, de lo contrario no se -->
   <div class="grid grid-cols-1 mt-5 mx-7">
@@ -21,18 +26,25 @@
         <input name="imagen" id="imagen" type='file' class="hidden" />
     </div>
   </div>
-
+<br>
   <div class="mb-3">
-    <label for="" class="form-label">Ubicacion</label>
-    <input id="ubicacion" name="ubicacion" type="text" class="form-control" tabindex="3">
+    
+    <input placeholder="Ubicacion"  id="ubicacion" name="ubicacion" type="text" class="input form-control" tabindex="3">
   </div>
   <div class="mb-3">
-    <label for="" class="form-label">Telefono</label>
-    <input id="telefono" name="telefono" type="number"  step="any" class="form-control" tabindex="3">
+    
+    <input placeholder="Telefono"  id="telefono" name="telefono" type="number"  step="any" class=" input form-control" tabindex="3">
   </div>
-  <a href="/organizacion" class="btn btn-secondary" tabindex="5">Cancelar</a>
+ 
   <button type="submit" class="btn btn-primary" tabindex="4">Guardar</button>
+  <br><br>
+   <a href="/organizacion" class="btn btn-danger" tabindex="5">Cancelar</a>
 </form>
+
+
+ <br>
+    </div>
+</center>
 
 @endsection
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> 

@@ -1,16 +1,58 @@
 body{
-background: url(/imagenes/EditarCrear.jpg);
-
+background:url(/imagenes/EditarCrear.jpg);
+color: white;
 }
 
 a{
-  color: black;
+  color: white;
 }
 h2{
-  color: black;
+  color: white;
 }
 label{
-    color: black;
+    color: white;
+}
+#imagenEdit{
+    width: 200px;
+}
+.input {
+    padding-left: 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+}
+.btn-primary{
+     width: 80%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: green;
+    cursor: pointer;
+}
+.btn-danger{
+       width: 32%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: #C70039;
+    cursor: pointer;
+}
+.input:hover {
+    border: 2px solid green;
+}
+#card{
+    display: flex;
+    background: black ;
+    opacity: 0.92;
+    width: 30rem;
+    align-items: center;
+
 }
 #icono{
    width: 50px ;

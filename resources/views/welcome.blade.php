@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 <div class="container">
-      <div class="container"></div>
+      
             
                 <aside id="fh5co-hero">
             <div class="flexslider">

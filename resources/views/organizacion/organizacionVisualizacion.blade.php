@@ -1,7 +1,7 @@
 @extends('layouts.plantillaBase2')
 
 @section('content')
-<div id="divSlider" class="container">
+
 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -12,7 +12,7 @@
 
 
     @forelse($organizacion as $item)
-      <div class="carousel-item @if($loop->index==0)  active @endif">
+      <div class="carousel-item @if($loop->index==0)  active @endif" id="slider">
          <img id="imgSlider" src="{{asset('storage').'/'.$item->imagen}}" class="d-block w-100" alt="...">
          
               <h2>{{$item->nombre}}</h2>
@@ -34,7 +34,6 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     
   </button>
-</div>
 </div>
 
 
