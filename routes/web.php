@@ -23,9 +23,22 @@ Route::get('/organizacionVisualizacion', [App\Http\Controllers\FrontController::
 
 Route::get('/canastaVisualizacion', [App\Http\Controllers\FrontController::class, 'indexCanasta'])->name('canastaVisualizacion');
 
+Route::get('/canastaVisualizacionPrecioAsc', [App\Http\Controllers\FrontController::class, 'indexCanastaPrecioAsc'])->name('canastaVisualizacionPrecioAsc');
+Route::get('/canastaVisualizacionPrecioDesc', [App\Http\Controllers\FrontController::class, 'indexCanastaPrecioDesc'])->name('canastaVisualizacionPrecioDesc');
+Route::get('/canastaVisualizacionNombreAsc', [App\Http\Controllers\FrontController::class, 'indexCanastaNombreAsc'])->name('canastaVisualizacionNombreAsc');
+Route::get('/canastaVisualizacionNombreDesc', [App\Http\Controllers\FrontController::class, 'indexCanastaNombreDesc'])->name('canastaVisualizacionNombreDesc');
+
+
+
+
 Route::get('/ofertaVisualizacion', [App\Http\Controllers\FrontController::class, 'indexOferta'])->name('ofertaVisualizacion');
 
-Route::get('/inversionistaVisualizacion', [App\Http\Controllers\FrontController::class, 'indexInversionista'])->name('ofertaVisualizacion');
+Route::get('/ofertaVisualizacionPrecioAsc', [App\Http\Controllers\FrontController::class, 'indexOfertaPrecioAsc'])->name('ofertaVisualizacionPrecioAsc');
+Route::get('/ofertaVisualizacionPrecioDesc', [App\Http\Controllers\FrontController::class, 'indexOfertaPrecioDesc'])->name('ofertaVisualizacionPrecioDesc');
+Route::get('/ofertaVisualizacionNombreAsc', [App\Http\Controllers\FrontController::class, 'indexOfertaNombreAsc'])->name('ofertaVisualizacionNombreAsc');
+Route::get('/ofertaVisualizacionNombreDesc', [App\Http\Controllers\FrontController::class, 'indexOfertaNombreDesc'])->name('ofertaVisualizacionNombreDesc');
+
+Route::get('/inversionistaVisualizacion', [App\Http\Controllers\FrontController::class, 'indexInversionista'])->name('inversionistaVisualizacion');
 
 Route::get('/eventoVisualizacion', [App\Http\Controllers\FrontController::class, 'indexEvento'])->name('eventoVisualizacion');
 
