@@ -33,11 +33,11 @@
                                             <strong>{{ $message }}</strong>
                                         </span>
                                     @enderror
-                  
+                
                     <button type="submit" class="btn btn-primary">
                                         {{ __('Iniciar') }}
                     </button>
-                    
+                      <p>No tienes una cuenta? <a href="register">Registrate</a></p>
                 </form>
               </div>
                 <img class="image-container" src="/imagenes/login.svg" alt="">

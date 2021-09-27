@@ -13,7 +13,11 @@ body {
     font-family: 'Poppins', sans-serif;
     background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
 }
-
+a{
+     color: var(--light-pink);
+    font-weight: 600;
+    cursor: pointer;
+}
 .login-container {
     height: 43.75em;
     width: 60em;

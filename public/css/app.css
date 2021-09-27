@@ -4361,7 +4361,8 @@ input[type=button].btn-block {
    background:white;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
+  border-radius: 1rem;
+
 }
 .card > hr {
   margin-right: 0;
@@ -4536,7 +4537,7 @@ input[type=button].btn-block {
 
 .card-columns .card {
   margin-bottom: 0.75rem;
-  
+  margin-right: 0px;
 }
 @media (min-width: 576px) {
   .card-columns {
@@ -4549,7 +4550,7 @@ input[type=button].btn-block {
   }
   .card-columns .card {
     display: inline-block;
-    width: 100%;
+    width: 80%;
   }
 }
 

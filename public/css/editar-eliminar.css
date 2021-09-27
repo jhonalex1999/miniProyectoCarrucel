@@ -15,6 +15,9 @@ label{
 #imagenEdit{
     width: 200px;
 }
+#imagenSeleccionada{
+    width: 50%;
+}
 .input {
     padding-left: 20px;
     border: none;
