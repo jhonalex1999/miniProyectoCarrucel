@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Fly to a location based on scroll position</title>
+	<title>Eventos</title>
 	<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
 
 	<!-- Scripts -->
