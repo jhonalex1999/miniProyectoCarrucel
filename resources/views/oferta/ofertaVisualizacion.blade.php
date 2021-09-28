@@ -8,8 +8,8 @@
 			<div>
 				<a href="{{ route('ofertaVisualizacionPrecioAsc') }}" class="btn btn-success">Menor a mayor precio</a>
 				<a href="{{ route('ofertaVisualizacionPrecioDesc') }}" class="btn btn-success">Mayor a menor precio</a>				
-				<a href="{{ route('ofertaVisualizacionNombreDesc') }}" class="btn btn-success">A-Z</a>
-				<a href="{{ route('ofertaVisualizacionNombreAsc') }}" class="btn btn-success">Z-A</a>
+				<a href="{{ route('ofertaVisualizacionNombreAsc') }}" class="btn btn-success">A-Z</a>
+				<a href="{{ route('ofertaVisualizacionNombreDesc') }}" class="btn btn-success">Z-A</a>
 			</div>
 			<br>
 			<div class="card-columns">
