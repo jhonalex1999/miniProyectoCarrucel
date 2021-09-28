@@ -20,7 +20,7 @@
 	<script src="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js"></script>
 	<style>
 		body { margin: 0; padding: 0; }
-		#map { position: static; top: 30; bottom: 700; height:500px;width:400px; }
+		
 	</style>
 </head>
 
@@ -112,8 +112,9 @@
     </style>
     <style>
       #map {
-         position: fixed;
+         position: absolute;
          width: 50%;
+         height: 1700px;
      }
      #features {
          width: 50%;
@@ -137,10 +138,10 @@
          margin-bottom: 200px;
      }
  </style>
-<div class="container">
+
      <div id="map"></div>
     
-</div>
+
 
  <div id="features">
   <section id="claustro" class="active">
