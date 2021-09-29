@@ -2,7 +2,13 @@
 
 @section('contenido')
 <form action="{{ route('oferta.create') }}" method="GET">
-     <button type="submit" class="btn btn-primary" tabindex="4">Agregar Oferta</button>
+     <div class="col-sm-12">
+         <a href="/admin" id="btnAtras" class="btn btn-secondary" tabindex="5"><img id="atras" src="/imagenes/atras.png"></a>
+        <center>
+             <button type="submit" class="btn btn-success" tabindex="4">Agregar Oferta</button>
+        </center>
+     </div>
+    
 </form>
 <div class="row">
     <div class="col">
@@ -17,6 +23,7 @@
             <th scope="col">Cantidad</th>
             <th scope="col">Descuento(%)</th>
             <th scope="col">Precio</th>
+            <th scope="col">Precio Nuevo</th>
             <th scope="col">Acciones</th>
         </tr>
     </thead>
@@ -31,6 +38,7 @@
             <td>{{$oferta->cantidad}}</td>
             <td>{{$oferta->descuento}}</td>
             <td>{{$oferta->precio}}</td>
+            <td>{{$oferta->precioN}}</td>
             <td> 
                 <a href="{{ route('oferta.edit', $oferta->id) }}" class="btn btn-editar">
                       <img id="editar" src="/imagenes/editar.png">
@@ -52,5 +60,5 @@
     </div>
 </div>
 
- <a href="/admin" class="btn btn-secondary" tabindex="5">Atras</a>
+
 @endsection

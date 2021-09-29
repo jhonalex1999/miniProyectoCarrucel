@@ -6,7 +6,7 @@
         <div class="table-responsive">
                 <table class=" table   table-dark table-striped mt-4" >
     <p>
-        <a href="{{ route('carrito.vaciar')}}" class="btn btn-danger">Vaciar Carrito</a>
+        <a id="btnVaciar" href="{{ route('carrito.vaciar')}}" class="btn btn-danger"><img id="vaciar" src="/imagenes/carro-vacio.png"> Vaciar carrito</a>
     </p>
     <thead>
         <tr>
@@ -63,8 +63,9 @@
     </div>
 </div>
 
-<h2>Total a pagar : {{$total}}</h2>
- <a href="/" class="btn btn-warning" tabindex="5">Seguir Comprando</a>
+<h2>Total a pagar :  {{$total}}</h2>
+
+ <a href="/"  class="btn btn-warning" tabindex="5"><img id="moneda" src="/imagenes/moneda.png"> Seguir Comprando</a>
 
  
  

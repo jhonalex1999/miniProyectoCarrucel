@@ -90,7 +90,7 @@
                                     </span>
                                     <div class="desc">
                                           <h3><a href="https://es.wikipedia.org/wiki/Solanum_lycopersicum" target="_blank">Tomate</a></h3>
-                                          <p>conocido comúnmente como tomate, jitomate o tomatera, es una especie de planta herbácea del género Solanum de la familia Solanaceae; es nativa de América Central y del norte y noroeste de Sudamérica; su uso como comida se habría originado en el sureste de México hace dos mil seiscientos años</p>
+                                          <p>Conocido comúnmente como tomate, jitomate o tomatera, es una especie de planta herbácea del género Solanum de la familia Solanaceae; es nativa de América Central y del norte y noroeste de Sudamérica; su uso como comida se habría originado en el sureste de México hace dos mil seiscientos años</p>
                                     </div>
                               </div>
                         </div>
@@ -101,7 +101,7 @@
                                     </span>
                                     <div class="desc">
                                           <h3><a href="https://es.wikipedia.org/wiki/Zea_mays" target="_blank">Maiz</a></h3>
-                                          <p>uno de los cereales más importantes del mundo, suministra elementos nutritivos a los seres humanos, es una materia prima básica de la industria de transformación, con la que se producen almidón, aceite y proteínas, bebidas alcohólicas, edulcorantes alimenticios y, desde hace poco, combustible</p>
+                                          <p>Uno de los cereales más importantes del mundo, suministra elementos nutritivos a los seres humanos, es una materia prima básica de la industria de transformación, con la que se producen almidón, aceite y proteínas, bebidas alcohólicas, edulcorantes alimenticios y, desde hace poco, combustible</p>
                                     </div>
                               </div>
                         </div>
@@ -134,7 +134,7 @@
                                     </span>
                                     <div class="desc">
                                           <h3><a href="https://es.wikipedia.org/wiki/Coco" target="_blank">Coco</a></h3>
-                                          <p>la palmera más cultivada a nivel mundial. Tiene una cáscara exterior gruesa , una capa intermedia fibrosa  y otra interior dura, vellosa y marrón (endocarpio); que tiene adherida la pulpa blanca y aromática </p>
+                                          <p>La palmera más cultivada a nivel mundial. Tiene una cáscara exterior gruesa , una capa intermedia fibrosa  y otra interior dura, vellosa y marrón (endocarpio); que tiene adherida la pulpa blanca y aromática </p>
                                     </div>
                               </div>
                         </div>
@@ -145,7 +145,7 @@
                                     </span>
                                     <div class="desc">
                                           <h3><a href="https://es.wikipedia.org/wiki/Caf%C3%A9"  target="_blank">Cafe</a></h3>
-                                          <p>el café es uno de los productos más consumidos en el mundo y básico en la economía mundial. Como el chocolate, la planta de café crece en los países del trópico. Y también como el chocolate, los granos se secan, fermentan y se tuestan para obtener una bebida llena de matices</p>
+                                          <p>El café es uno de los productos más consumidos en el mundo y básico en la economía mundial. Como el chocolate, la planta de café crece en los países del trópico. Y también como el chocolate, los granos se secan, fermentan y se tuestan para obtener una bebida llena de matices</p>
                                     </div>
                               </div>
                         </div>
@@ -193,52 +193,65 @@
             <div class="container">
                   <div class="row animate-box">
                         <div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
-                              <h2>Our Course</h2>
-                              <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+                              <h2>Tambien Encuentra</h2>
+                              
                         </div>
                   </div>
                   <div class="row">
                         <div class="col-md-6 animate-box">
                               <div class="course">
-                                    <a href="#" class="course-img" style="background-image: url(imagenes/inversionistas.jpg);">
+                                    <a href="canastaVisualizacion" class="course-img" style="background-image: url(imagenes/canastaPrincipal.jpg);">
                                     </a>
                                     <div class="desc">
-                                          <h3><a href="#">Web Master</a></h3>
-                                          <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-                                          <span><a href="#" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
+                                          <h3><a href="">Canasta Agricola</a></h3>
+                                          <p>En este apartado vas a encontrar los mejores productos
+                                             del agro caucano, cuando compras productos de nuestro 
+                                             departamento ayudaras a impulsar la economia de un hogar y 
+                                             del sector agricola caucano.
+
+                                          </p>
+                                          <span><a href="canastaVisualizacion" class="btn btn-primary btn-sm btn-course">Visitar</a></span>
                                     </div>
                               </div>
                         </div>
                         <div class="col-md-6 animate-box">
                               <div class="course">
-                                    <a href="#" class="course-img" style="background-image: url(imagenes/inversionistas.jpg);">
+                                    <a href="organizacionVisualizacion" class="course-img" style="background-image: url(imagenes/emprenderPrincipal.jpg);">
                                     </a>
                                     <div class="desc">
-                                          <h3><a href="#">Business &amp; Accounting</a></h3>
-                                          <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-                                          <span><a href="#" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
+                                          <h3><a href="#">Emprendimientos</a></h3>
+                                          <p>En este apartado vas a encontrar emprendimientos agricolas
+                                             impulsados por emprendedores de nuestro departamento, donde
+                                             se mostrara los datos necesarios para que puedas contactarte
+                                             con ellos.</p>
+                                          <span><a href="organizacionVisualizacion" class="btn btn-primary btn-sm btn-course">Visitar</a></span>
                                     </div>
                               </div>
                         </div>
                         <div class="col-md-6 animate-box">
                               <div class="course">
-                                    <a href="#" class="course-img" style="background-image: url(imagenes/inversionistas.jpg);">
+                                    <a href="ofertaVisualizacion" class="course-img" style="background-image: url(imagenes/ofertaPrincipal.jpg);">
                                     </a>
                                     <div class="desc">
-                                          <h3><a href="#">Science &amp; Technology</a></h3>
-                                          <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-                                          <span><a href="#" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
+                                          <h3><a href="#">Agro Ofertas</a></h3>
+                                          <p>En este apartado vas a encontrar productos del agro caucano
+                                             con un descuentos especiales para que puedas llevartelo directo
+                                             a tu hogar al mejor precio y con el agregado de ayudar a los 
+                                             agricultores de nuestro campo.</p>
+                                          <span><a href="ofertaVisualizacion" class="btn btn-primary btn-sm btn-course">Visitar</a></span>
                                     </div>
                               </div>
                         </div>
                         <div class="col-md-6 animate-box">
                               <div class="course">
-                                    <a href="#" class="course-img" style="background-image: url(imagenes/inversionistas.jpg);">
+                                    <a href="inversionistaVisualizacion" class="course-img" style="background-image: url(imagenes/inversionistaPrincipal.jpeg);">
                                     </a>
                                     <div class="desc">
-                                          <h3><a href="#">Health &amp; Psychology</a></h3>
-                                          <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-                                          <span><a href="#" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
+                                          <h3><a href="#">Inversionistas</a></h3>
+                                          <p>En este apartado encontraras a los inversionistas que 
+                                          ayudan a que el sector agricola del cauca siga creciendo cada
+                                          dia mas, ademas poras ver su informacion con la cual podras    contactarte con ellos y empezar un nuevo emprendimiento.</p>
+                                          <span><a href="inversionistaVisualizacion" class="btn btn-primary btn-sm btn-course">Visitar</a></span>
                                     </div>
                               </div>
                         </div>

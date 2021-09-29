@@ -2,7 +2,14 @@
 
 @section('contenido')
 <form action="{{ route('inversionista.create') }}" method="GET">
-	 <button type="submit" class="btn btn-primary" tabindex="4">Agregar Inversionista</button>
+	
+	 <div class="col-sm-12">
+	 	 <a id="btnAtras" href="/admin" class="btn btn-secondary" tabindex="5"><img id="atras" src="/imagenes/atras.png"></a>
+	 	<center>
+	 		<button type="submit" class="btn btn-success" tabindex="4">Agregar Inversionista</button>
+	 	</center>
+	 </div>
+	 
 </form>
 <div class="row">
     <div class="col">
@@ -50,5 +57,5 @@
     </div>
 </div>
 
- <a href="/admin" class="btn btn-secondary" tabindex="5">Atras</a>
+
 @endsection

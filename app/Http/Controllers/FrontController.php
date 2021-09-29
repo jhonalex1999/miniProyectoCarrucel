@@ -55,25 +55,25 @@ class FrontController extends Controller{
         return view('oferta/ofertaVisualizacion',compact('oferta'));
     }
     public function indexOfertaPrecioAsc(){
-        $oferta = Oferta::select('id','nombre','imagen','cantidad','descuento','precio')
-        ->orderBy('precio','ASC')
+        $oferta = Oferta::select('id','nombre','imagen','cantidad','descuento','precio','precioN')
+        ->orderBy('precioN','ASC')
         ->get();
         return view('oferta/ofertaVisualizacion',compact('oferta'));
     }
     public function indexOfertaPrecioDesc(){
-        $oferta = Oferta::select('id','nombre','imagen','cantidad','descuento','precio')
-        ->orderBy('precio','DESC')
+        $oferta = Oferta::select('id','nombre','imagen','cantidad','descuento','precio','precioN')
+        ->orderBy('precioN','DESC')
         ->get();
         return view('oferta/ofertaVisualizacion',compact('oferta'));
     }
     public function indexOfertaNombreAsc(){
-        $oferta = Oferta::select('id','nombre','imagen','cantidad','descuento','precio')
+        $oferta = Oferta::select('id','nombre','imagen','cantidad','descuento','precio','precioN')
         ->orderBy('nombre','ASC')
         ->get();
         return view('oferta/ofertaVisualizacion',compact('oferta'));
     }
     public function indexOfertaNombreDesc(){
-        $oferta = Oferta::select('id','nombre','imagen','cantidad','descuento','precio')
+        $oferta = Oferta::select('id','nombre','imagen','cantidad','descuento','precio','precioN')
         ->orderBy('nombre','DESC')
         ->get();
         return view('oferta/ofertaVisualizacion',compact('oferta'));

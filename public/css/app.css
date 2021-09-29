@@ -4355,13 +4355,17 @@ input[type=button].btn-block {
   
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   min-width: 0;
   word-wrap: break-word;
    background:white;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 1rem;
+  margin-bottom: 0.75rem;
+  margin-left: 3rem;
+  display: inline-block;
+  width: 220px;
 
 }
 .card > hr {
@@ -4541,8 +4545,8 @@ input[type=button].btn-block {
 }
 @media (min-width: 576px) {
   .card-columns {
-    -moz-column-count: 3;
-         column-count: 3;
+    -moz-column-count: 4;
+         column-count: 4;
     -moz-column-gap: 1.25rem;
          column-gap: 1.25rem;
     orphans: 1;
@@ -10299,4 +10303,8 @@ footer{
 #login{
   width: 100%;
 height: 400px;
+}
+#descuento{
+  width: 20px;
+  height: 20px;
 }

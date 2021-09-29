@@ -11,7 +11,7 @@
                     <div class="card-body">
                      <h5 class="card-title">CRUD Canasta</h5>
                      <p class="card-text">Ingresa para Crear, Editar y Eliminar productos de la canasta</p>
-                     <a href="/canasta" class="btn btn-primary">Gestionar</a>
+                     <a href="/canasta" class="btn btn-info">Gestionar</a>
                     </div>
                 </div>
         </div>
@@ -21,7 +21,7 @@
                     <div class="card-body">
                      <h5 class="card-title">CRUD Emprendimientos</h5>
                      <p class="card-text">Ingresa para Crear, Editar y los emprendimientos</p>
-                     <a href="/organizacion" class="btn btn-primary">Gestionar</a>
+                     <a href="/organizacion" class="btn btn-info">Gestionar</a>
                     </div>
                 </div>
         </div>
@@ -31,7 +31,7 @@
                     <div class="card-body">
                      <h5 class="card-title">CRUD Agro Oferta</h5>
                      <p class="card-text">Ingresa para Crear, Editar y Eliminar los productos de Agro Ofertas</p>
-                     <a href="/oferta" class="btn btn-primary">Gestionar</a>
+                     <a href="/oferta" class="btn btn-info">Gestionar</a>
                     </div>
                 </div>
         </div>
@@ -41,7 +41,7 @@
                     <div class="card-body">
                      <h5 class="card-title">CRUD Inversionistas</h5>
                      <p class="card-text">Ingresa para Crear, Editar y Eliminar los inversionistas</p>
-                     <a href="/inversionista" class="btn btn-primary">Gestionar</a>
+                     <a href="/inversionista" class="btn btn-info">Gestionar</a>
                     </div>
                 </div>
         </div>

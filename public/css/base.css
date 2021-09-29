@@ -13,6 +13,27 @@ h2{
    height: 50px;
  
 }
+#atras{
+  width: 30px;
+  height: 30px;
+}
+#btnAtras{
+  background: transparent; 
+  border-color: transparent;
+}
+#vaciar{
+
+  width: 30px;
+  height: 30px;
+}
+#btnVaciar{
+  background-color: black;
+  border-color: green;
+}
+#moneda{
+  width: 30px;
+  height: 30px;
+}
 #tituloIcono{
       margin-right: 100px;
 }

@@ -49,6 +49,7 @@ class OfertaController extends Controller
         if($request->hasFile('imagen')){
             $oferta['imagen']=$request->file('imagen')->store   ('uploads','public');
         }
+        $oferta['precioN']=$oferta['precio']-($oferta['precio'] * ($oferta['descuento']/100));
         Oferta::insert($oferta);
         return redirect('/oferta');
     }
@@ -87,7 +88,7 @@ class OfertaController extends Controller
     {
         //
         $datosOferta = request()->except(['_token','_method']);
-
+        $datosOferta['precioN']=$datosOferta['precio']-($datosOferta['precio'] * ($datosOferta['descuento']/100));
         if($request->hasFile('imagen')){
             $oferta=Oferta::findOrFail($id);
 

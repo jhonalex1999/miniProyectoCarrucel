@@ -3,7 +3,13 @@
 @section('contenido')
 
 <form action="{{ route('organizacion.create') }}" method="GET">
-	 <button type="submit" class="btn btn-primary" tabindex="4">Agregar Organizacion</button>
+	 <div class="col-sm-12">
+	 	 <a href="/admin" id="btnAtras" class="btn btn-secondary" tabindex="5"><img id="atras" src="/imagenes/atras.png"></a>
+	 	<center>
+	 			 <button type="submit" class="btn btn-success" tabindex="4">Agregar Organizacion</button>
+	 	</center>
+	 </div>
+
 </form>
 <div class="row">
 	<div class="col">
@@ -51,5 +57,5 @@
 	</div>
 </div>
 
- <a href="/admin" class="btn btn-secondary" tabindex="5">Atras</a>
+
 @endsection

@@ -20,6 +20,7 @@ class CreateOfertasTable extends Migration
             $table->integer('cantidad');
             $table->integer('descuento');
             $table->integer('precio');
+             $table->integer('precioN');
             $table->timestamps();
         });
     }
