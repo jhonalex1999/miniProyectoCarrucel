@@ -231,25 +231,68 @@
             );
         
         // create a DOM for the marker
-        /*const el1 = document.createElement('div');
+        const el1 = document.createElement('div');
         el1.id = 'marker';
         el1.className = 'marker';
-        el1.style.backgroundImage = `url(/imagenes/imagen2.jpg)`;
-        el1.style.width = `80px`;
-        el1.style.height = `80px`;
+        el1.style.backgroundImage = `url(/imagenes/iconoCafe.png)`;
+        el1.style.width = `30px`;
+        el1.style.height = `30px`;
         el1.style.backgroundSize = '100%';
          // create a DOM for the marker
         const el2 = document.createElement('div');
         el2.id = 'marker';
         el2.className = 'marker';
-        el2.style.backgroundImage = `url(https://placekitten.com/g/80/80/)`;
-        el2.style.width = `80px`;
-        el2.style.height = `80px`;
+        el2.style.backgroundImage = `url(/imagenes/iconoAgro.png)`;
+        el2.style.width = `50px`;
+        el2.style.height = `50px`;
         el2.style.backgroundSize = '100%';
-        */
+        const el3 = document.createElement('div');
+        el3.id = 'marker';
+        el3.className = 'marker';
+        el3.style.backgroundImage = `url(/imagenes/iconoCoco.png)`;
+        el3.style.width = `50px`;
+        el3.style.height = `50px`;
+        el3.style.backgroundSize = '100%';
+        const el4 = document.createElement('div');
+        el4.id = 'marker';
+        el4.className = 'marker';
+        el4.style.backgroundImage = `url(/imagenes/iconoAgro2.png)`;
+        el4.style.width = `40px`;
+        el4.style.height = `40px`;
+        el4.style.backgroundSize = '100%';
+        const el5 = document.createElement('div');
+        el5.id = 'marker';
+        el5.className = 'marker';
+        el5.style.backgroundImage = `url(/imagenes/iconoFruta.png)`;
+        el5.style.width = `40px`;
+        el5.style.height = `40px`;
+        el5.style.backgroundSize = '100%';
         // create a marker
-		//new mapboxgl.Marker(el1)
-        const marker1 = new mapboxgl.Marker()
+		    new mapboxgl.Marker(el1)
+        .setPopup(popup1)
+        .setLngLat([-76.60439996583395, 2.441947710791877])
+        .addTo(map);
+
+        new mapboxgl.Marker(el2)
+        .setPopup(popup2)
+        .setLngLat([-76.60629896975081,2.442076339884687])
+        .addTo(map);
+
+        new mapboxgl.Marker(el3)
+        .setPopup(popup3)
+        .setLngLat([-76.59896044618817,2.4437163599587035])
+        .addTo(map);
+
+        new mapboxgl.Marker(el4)
+        .setPopup(popup4)
+        .setLngLat([-76.60607366415228,2.4441558421455563])
+        .addTo(map);
+
+        new mapboxgl.Marker(el5)
+        .setPopup(popup5)
+        .setLngLat([-76.59953980330788,2.446363969866369])
+        .addTo(map);
+        /*const marker1 = new mapboxgl.Marker()
         .setPopup(popup1)
         .setLngLat([-76.60439996583395, 2.441947710791877])
         .addTo(map);
@@ -272,7 +315,7 @@
         const marker5 = new mapboxgl.Marker()
         .setPopup(popup5)
         .setLngLat([-76.59953980330788,2.446363969866369])
-        .addTo(map);
+        .addTo(map);*/
         
         const chapters = {
            'claustro': {
