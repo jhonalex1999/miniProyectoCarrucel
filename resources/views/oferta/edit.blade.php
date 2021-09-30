@@ -14,6 +14,11 @@
     <label for="" class="form-label">Nombre</label>
     <input id="nombre" name="nombre" type="text" class="input form-control" tabindex="1" value="{{$oferta->nombre}}">    
   </div>
+  @error('nombre')
+    <small>*{{$message}}</small>
+    <br>
+  @enderror
+<br>
   <div class="mb-3">
     <img id="imagenEdit" src="{{asset('storage').'/'.$oferta->imagen}}" alt="">
  
@@ -26,15 +31,29 @@
     <label for="" class="form-label">Cantidad</label>
     <input id="cantidad" name="cantidad" type="number" class="input form-control" tabindex="3" value="{{$oferta->cantidad}}">
   </div>
+  @error('cantidad')
+    <small>*{{$message}}</small>
+    <br>
+  @enderror
+<br>
   <div class="mb-3">
     <label for="" class="form-label">Descuento</label>
     <input id="descuento" name="descuento" type="number"  class="input form-control" tabindex="3" value="{{$oferta->descuento}}">
   </div>
+  @error('descuento')
+    <small>*{{$message}}</small>
+    <br>
+  @enderror
+<br>
   <div class="mb-3">
     <label for="" class="form-label">Precio</label>
     <input id="precio" name="precio" type="number"  class="input form-control" tabindex="3" value="{{$oferta->precio}}">
   </div>
- 
+ @error('precio')
+    <small>*{{$message}}</small>
+    <br>
+  @enderror
+<br>
   <button type="submit" class="btn btn-primary" tabindex="4">Guardar</button>
  <br><br>
  <a href="/oferta" class="btn btn-danger" tabindex="5">Cancelar</a>

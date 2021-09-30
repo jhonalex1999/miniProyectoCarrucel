@@ -87,6 +87,10 @@ class OfertaController extends Controller
     public function update(Request $request, $id)
     {
         //
+          $request->validate([
+            'nombre' => 'required', 'cantidad' => 'required', 'descuento'=>'required','precio'=>'required'
+        ]);
+
         $datosOferta = request()->except(['_token','_method']);
         $datosOferta['precioN']=$datosOferta['precio']-($datosOferta['precio'] * ($datosOferta['descuento']/100));
         if($request->hasFile('imagen')){

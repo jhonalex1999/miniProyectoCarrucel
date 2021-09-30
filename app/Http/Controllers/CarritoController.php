@@ -37,7 +37,7 @@ class CarritoController extends Controller
     }
       public function addOferta(Oferta $item)
     {
-       $array = array('nombre' =>$item->nombre , 'imagen'=>$item->imagen,'cantidad'=>$item->cantidad,'precio'=>$item->precio,'precioT'=>$item->precio );
+       $array = array('nombre' =>$item->nombre , 'imagen'=>$item->imagen,'cantidad'=>$item->cantidad,'precio'=>$item->precioN,'precioT'=>$item->precioN );
         Carrito::create($array);
         return redirect('/carrito');
 

@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Storage;
 class InversionistaController extends Controller
 {
     /**
+     * 
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
@@ -84,6 +85,10 @@ class InversionistaController extends Controller
     public function update(Request $request,  $id)
     {
         //
+       $request->validate([
+            'nombre' => 'required', 'descripcion' => 'required', 'correo'=>'required'
+        ]);
+
         $datosInversionista = request()->except(['_token','_method']);
 
         if($request->hasFile('imagen')){

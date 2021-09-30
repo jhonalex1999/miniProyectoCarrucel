@@ -14,6 +14,11 @@
     <label for="" class="form-label">Nombre</label>
     <input id="nombre" name="nombre" type="text" class="input form-control" tabindex="1" value="{{$organizacion->nombre}}">    
   </div>
+  @error('nombre')
+    <small>*{{$message}}</small>
+    <br>
+  @enderror
+<br>
  <div class="mb-3">
     <img id="imagenEdit" src="{{asset('storage').'/'.$organizacion->imagen}}" alt="">
  
@@ -26,11 +31,20 @@
     <label for="" class="form-label">Ubicacion</label>
     <input id="ubicacion" name="ubicacion" type="text" class="input form-control" tabindex="3" value="{{$organizacion->ubicacion}}">
   </div>
+  @error('ubicacion')
+    <small>*{{$message}}</small>
+    <br>
+  @enderror
+<br>
   <div class="mb-3">
     <label for="" class="form-label">Telefono</label>
     <input id="telefono" name="telefono" type="number" class="input form-control" tabindex="3" value="{{$organizacion->telefono}}">
   </div>
- 
+ @error('telefono')
+    <small>*{{$message}}</small>
+    <br>
+  @enderror
+<br>
   <button type="submit" class="btn btn-primary" tabindex="4">Guardar</button>
   <br><br>
  <a href="/organizacion" class="btn btn-danger" tabindex="5">Cancelar</a>

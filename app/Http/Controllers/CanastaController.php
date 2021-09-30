@@ -22,6 +22,10 @@ class CanastaController extends Controller
         return view('canasta.index')->with('canasta',$canasta);
     }
 
+   
+        
+    
+
     /**
      * Show the form for creating a new resource.
      *
@@ -41,8 +45,9 @@ class CanastaController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'nombre' => 'required', 'imagen' => 'required|image|mimes:jpeg,png,svg|max:1024', 'cantidad' => 'required', 'precio'=>'required'
+            'nombre' => 'required', 'imagen' => 'required|image|mimes:jpeg,png,svg|max:1024', 'cantidad' => 'required','integer', 'precio'=>'required','integer'
         ]);
+
 
         $canasta=request()->except('_token');
         if($request->hasFile('imagen')){
@@ -92,7 +97,10 @@ class CanastaController extends Controller
         $canasta->cantidad=$request->get('cantidad');
         $canasta->precio=$request->get('precio');
         $canasta->save();*/
-
+         $request->validate([
+            'nombre' => 'required', 'cantidad' => 'required','integer', 'precio'=>'required','integer'
+        ]);
+         
         $datosCanasta = request()->except(['_token','_method']);
 
         if($request->hasFile('imagen')){

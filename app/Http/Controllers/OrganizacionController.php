@@ -105,6 +105,9 @@ class OrganizacionController extends Controller
         $organizacion->telefono=$request->get('telefono');
         $organizacion->save();
         return redirect('/organizacion');*/
+        $request->validate([
+            'nombre' => 'required', 'ubicacion' => 'required', 'telefono'=>'required','integer'
+        ]);
 
         $datosOrganizacion = request()->except(['_token','_method']);
 

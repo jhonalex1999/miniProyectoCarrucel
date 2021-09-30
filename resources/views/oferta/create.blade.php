@@ -12,7 +12,11 @@
     
     <input placeholder="Nombre" id="nombre" name="nombre" type="text" class="input form-control" tabindex="1">    
   </div>
-
+@error('nombre')
+    <small>*{{$message}}</small>
+    <br>
+  @enderror
+<br>
   <!-- Para ver la imagen seleccionada, de lo contrario no se -->
   <div class="grid grid-cols-1 mt-5 mx-7">
     <img id="imagenSeleccionada" style="max-height: 300px;">           
@@ -26,20 +30,39 @@
     </div>
   </div>
 
+@error('imagen')
+    <small>*{{$message}}</small>
+    <br>
+  @enderror
 <br>
   <div class="mb-3">
     
     <input placeholder="Cantidad" id="cantidad" name="cantidad" type="number" class="input form-control" tabindex="3">
   </div>
+  @error('cantidad')
+    <small>*{{$message}}</small>
+    <br>
+  @enderror
+<br>
   <div class="mb-3">
     
     <input placeholder="Descuento" id="descuento" name="descuento" type="number" step="any" class="input form-control" tabindex="3">
   </div>
+@error('descuento')
+    <small>*{{$message}}</small>
+    <br>
+  @enderror
+<br>
+
   <div class="mb-3">
     
     <input placeholder="Precio" id="precio" name="precio" type="number" step="any"  class="input form-control" tabindex="3">
   </div>
- 
+ @error('precio')
+    <small>*{{$message}}</small>
+    <br>
+  @enderror
+<br>
   <button type="submit" class="btn btn-primary" tabindex="4">Guardar</button>
 </form>
  <a href="/oferta" class="btn btn-danger" tabindex="5">Cancelar</a>

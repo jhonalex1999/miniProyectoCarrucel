@@ -15,6 +15,11 @@
     <label for="" class="form-label">Nombre</label>
     <input id="nombre" name="nombre" type="text" class="input form-control" tabindex="1" value="{{$canasta->nombre}}">    
   </div>
+  @error('nombre')
+    <small>*{{$message}}</small>
+    <br>
+  @enderror
+<br>
   <div class="mb-3">
     <img id="imagenEdit" src="{{asset('storage').'/'.$canasta->imagen}}" alt="">
     <label for="" class="form-label"></label> 
@@ -23,15 +28,26 @@
         <input  name="imagen" id="imagen" type='file' class="input form-control" tabindex="2" value="{{$canasta->imagen}}"/>
    
   </div>
+   @error('imagen')
+    <small>*{{$message}}</small>
+    <br>
+  @enderror
   <div class="mb-3">
     <label for="" class="form-label">Cantidad</label>
     <input id="cantidad" name="cantidad" type="number" class="input form-control" tabindex="3" value="{{$canasta->cantidad}}">
   </div>
+   @error('cantidad')
+    <small>*{{$message}}</small>
+    <br>
+  @enderror
   <div class="mb-3">
     <label for="" class="form-label">Precio</label>
     <input id="precio" name="precio" type="number"  class="input form-control" tabindex="3" value="{{$canasta->precio}}">
   </div>
- 
+  @error('precio')
+    <small>*{{$message}}</small>
+    <br>
+  @enderror
   <button type="submit" class="btn btn-primary" tabindex="4">Guardar</button>
   <br><br>
    <a href="/canasta" class="btn btn-danger" tabindex="5">Cancelar</a>

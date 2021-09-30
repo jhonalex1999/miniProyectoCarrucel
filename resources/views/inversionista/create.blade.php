@@ -12,7 +12,11 @@
     
     <input placeholder="Nombre" id="nombre" name="nombre" type="text" class="input form-control" tabindex="1">    
   </div>
-
+@error('nombre')
+    <small>*{{$message}}</small>
+    <br>
+  @enderror
+<br>
   <!-- Para ver la imagen seleccionada, de lo contrario no se -->
   <div class="grid grid-cols-1 mt-5 mx-7">
     <img id="imagenSeleccionada" style="max-height: 300px;">           
@@ -25,18 +29,30 @@
         <input name="imagen" id="imagen" type='file' class="input hidden" />
     </div>
   </div>
-
+@error('imagen')
+    <small>*{{$message}}</small>
+    <br>
+  @enderror
 <br>
   <div class="mb-3">
     
     <input placeholder="Descripcion" id="descripcion" name="descripcion" type="text" class="input form-control" tabindex="3">
   </div>
+  @error('descripcion')
+    <small>*{{$message}}</small>
+    <br>
+  @enderror
+<br>
   <br>
   <div class="mb-3">
     
     <input placeholder="Correo" id="correo" name="correo" type="text" class="input form-control" tabindex="3">
   </div>
-  
+  @error('correo')
+    <small>*{{$message}}</small>
+    <br>
+  @enderror
+<br>
   <button type="submit" class="btn btn-primary" tabindex="4">Guardar</button>
 
   
