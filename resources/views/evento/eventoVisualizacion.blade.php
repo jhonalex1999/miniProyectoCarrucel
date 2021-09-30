@@ -114,7 +114,7 @@
       #map {
          position: absolute;
          width: 50%;
-         height: 1700px;
+         height: 1200px;
      }
      #features {
          width: 50%;
@@ -144,92 +144,62 @@
 
 
  <div id="features">
-  <section id="claustro" class="active">
-     <h3>Claustro Santo Domingo</h3>
-     <p>
-        November 1895. London is shrouded in fog and Sherlock Holmes and
-        Watson pass time restlessly awaiting a new case. "The London
-        criminal is certainly a dull fellow," Sherlock bemoans. "There have
-        been numerous petty thefts," Watson offers in response. Just then a
-        telegram arrives from Sherlock's brother Mycroft with a mysterious
-        case.
-    </p>
+  
+<section id="claustro" class="active">
+   <h3>Reunion Anual de Caficultores</h3>
+   <h5>Claustro de Santo Domingo</h5>
+   <p>
+    Evento que reune a expertos en el cultivo del Cafe.
+    Encontrara charlas de caficultores con años 
+    de experiencia en el sector, sobre cultivo, comercializacion
+    y distribucion del Cafe. Ademas de charlas tambien habra cata
+    de cafes y muchos caficultores ofreceran sus productos 
+    a excelentes precios.  
+  </p>
+  <br>
 </section>
 <section id="parque">
- <h3>Parque Caldas</h3>
+  <h3>Feria AgroAlParque</h3>
+  <h5>Parque Caldas</h5>
  <p>
-    Arthur Cadogan West was found dead, head crushed in on train tracks
-    at Aldgate Station at 6AM Tuesday morning. West worked at Woolwich
-    Arsenal on the Bruce-Partington submarine, a secret military
-    project. Plans for the submarine had been stolen and seven of the
-    ten missing papers were found in West's possession. Mycroft implores
-    Sherlock to take the case and recover the three missing papers.
+  Feria que resalta la agricultura del departamento del Cauca.
+  Encuentra todo tipo de productos al mejor precio, sembrados y 
+  cultivados en este departamento, apoyando asi al comercio y
+  agricultura local.
 </p>
 </section>
 <section id="morro">
- <h3>Morro de Tulcan</h3>
+ <h3>Festival del Coco</h3>
+ <h5>Pueblito Patojo</h5>
  <p>
-    Holmes and Watson's investigations take them across London. Sherlock
-    deduces that West was murdered elsewhere, then moved to Aldgate
-    Station to create the illusion that he was crushed on the tracks by
-    a train. On their way to Woolwich Sherlock dispatches a telegram to
-    Mycroft at London Bridge: "Send list of all foreign spies known to
-    be in England, with full address."
+  Primera festival del Coco. Este evento reune a los productores de
+  coco de todo el pacifico caucano, Timbiquí, Guapi, 
+  Lopez de Micay, entre otros. 
+  Ven y apoya a los productores de coco a través de esta iniciativa.
 </p>
 </section>
 <section id="puente">
- <h3>Puente del Humilladero</h3>
+ <h3>Encuentro de Agricultores del Pacifico Caucano</h3>
+ <h5>Puente del Humilladero</h5>
  <p>
-    While investigating at Woolwich Arsenal Sherlock learns that West
-    did not have the three keys&mdash;door, office, and
-    safe&mdash;necessary to steal the papers. The train station clerk
-    mentions seeing an agitated West boarding the 8:15 train to London
-    Bridge. Sherlock suspects West of following someone who had access
-    to the Woolwich chief's keyring with all three keys.
+  Evento dedicado a agricultores del Pacifico Caucano, realizado en la capital 
+  del departamento para ofrecer sus productos a toda la poblacion
+  con mejores precios y apoyando directamente a los agricultores que proveen
+  dichos productos.
 </p>
 </section>
 <section id="unicauca">
- <h3>Universidad del Cauca Facultad FIET</h3>
+ <h3>Encuentro de productores de Frutas</h3>
+ <h5>Universidad del Cauca Facultad FIET</h5>
  <p>
-    Mycroft responds to Sherlock's telegram and mentions several spies.
-    Hugo Oberstein of 13 Caulfield Gardens catches Sherlock's eye. He
-    heads to the nearby Gloucester Road station to investigate and
-    learns that the windows of Caulfield Gardens open over rail tracks
-    where trains stop frequently.
+  La Universidad del Cauca abre sus puertas y ofrece el espacio
+  para agricultores y principales productores de frutas del departamento del Cauca.
+  El evento contara con asistencia de productores de frutas como el platano, la papaya,
+  la mora, la piña, entre otros.
+
 </p>
-</section>
-<section id="caulfield-gardens">
- <h3>13 Caulfield Gardens</h3>
- <p>
-    Holmes deduces that the murderer placed West atop a stopped train at
-    Caulfield Gardens. The train traveled to Aldgate Station before
-    West's body finally toppled off. Backtracking to the criminal's
-    apartment, Holmes finds a series of classified ads from
-    <em>The Daily Telegraph</em> stashed away. All are under the name
-    Pierrot: "Monday night after nine. Two taps. Only ourselves. Do not
-    be so suspicious. Payment in hard cash when goods delivered."
-</p>
-</section>
-<section id="telegraph">
- <h3>The Daily Telegraph</h3>
- <p>
-    Holmes and Watson head to The Daily Telegraph and place an ad to
-    draw out the criminal. It reads: "To-night. Same hour. Same place.
-    Two taps. Most vitally important. Your own safety at stake.
-    Pierrot." The trap works and Holmes catches the criminal: Colonel
-    Valentine Walter, the brother of Woolwich Arsenal's chief. He
-    confesses to working for Hugo Oberstein to obtain the submarine
-    plans in order to pay off his debts.
-</p>
-</section>
-<section id="charing-cross">
- <h3>Charing Cross Hotel</h3>
- <p>
-    Walter writes to Oberstein and convinces him to meet in the smoking
-    room of the Charing Cross Hotel where he promises additional plans
-    for the submarine in exchange for money. The plan works and Holmes
-    and Watson catch both criminals.
-</p>
+<br>
+<br>
 </section>
 </div>
 <script>
@@ -245,19 +215,19 @@
 
         // create the popup
         const popup1 = new mapboxgl.Popup({ offset: 50 }).setText(
-            'Claustro Santo Domingo'
+            'Reunion Anual de Caficultores'
             );
         const popup2 = new mapboxgl.Popup({ offset: 50 }).setText(
-            'Parque Caldas'
+            'Feria AgroAlParque'
             );
         const popup3 = new mapboxgl.Popup({ offset: 50 }).setText(
-            'El Morro'
+            'Festival del Coco'
             );
         const popup4 = new mapboxgl.Popup({ offset: 50 }).setText(
-            'Puente del humilladero'
+            'Encuentro de Agricultores del Pacifico Caucano'
             );
         const popup5 = new mapboxgl.Popup({ offset: 50 }).setText(
-            'Universidad del Cauca'
+            'Encuentro de productores de Frutas'
             );
         
         // create a DOM for the marker
